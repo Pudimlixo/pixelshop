@@ -1,0 +1,340 @@
+@charset "UTF-8";
+
+:root {
+   /*Cores*/
+   --cor1: #E00AFC;
+   --cor2: #290773;
+   --cor3: #16A0ED;
+   --cor4: #a80752;
+   --cor5: #1DF2F2;
+   /*Fontes*/
+   --titulo: 'Pixelify Sans';
+   --navegacao: 'Tektur';
+   --subtitulo: 'Source Code Pro';
+   --linkBotao: 'Source Code Pro';
+   --paragrafo: 'Poppins';
+}
+
+* {
+   margin: 0px;
+}
+
+body {
+   background-color: rgb(244, 194, 240);
+}
+
+nav#menu {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+   background: linear-gradient(90deg, var(--cor2), #370c94, #3f11a3);
+}
+
+nav#menu picture#logo {
+   display: flex;
+   align-items: center;
+   margin-bottom: 15px;
+   max-width: 150px;
+}
+
+nav#menu picture#logo img {
+   width: 75px;
+}
+
+nav ul {
+   display: inline-flex;
+   list-style: none;
+}
+
+nav ul>li {
+   font-family: var(--navegacao);
+   margin-right: 15px;
+}
+
+nav ul li a {
+   text-decoration: none;
+   color: var(--cor1);
+   transition: 0.3s;
+}
+
+nav ul li a:hover {
+   font-size: 17px;
+   color: rgb(205, 7, 139);
+}
+
+nav#menu ul div#searchbar {
+   display: flex;
+   align-items: center;
+   margin-right: 50px;
+}
+
+nav#menu ul div#searchbar img {
+   width: 20px;
+   background-color: white;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   margin-bottom: 5px;
+   padding: 5px;
+}
+
+nav#menu ul div#searchbar input {
+   width: 300px;
+   height: 30px;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   border: none;
+   outline: none;
+   margin-bottom: 5px;
+}
+
+nav#menu ul li#searchbar input:hover {
+   border: none;
+   outline: none;
+}
+
+@media (max-width: 700px) {
+   nav#menu {
+      display: flex;
+      justify-content: center;
+      height: auto;
+      transition: all 0.3s ease-in-out;
+   }
+
+   nav#menu ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 100%;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      height: auto;
+      transition: all 0.3s ease-in-out;
+   }
+
+   nav ul li#searchbar input {
+      margin-bottom: 15px;
+   }
+
+}
+
+header {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: end;
+   text-align: center;
+   height: 300px;
+   border: none;
+   border-bottom: 15px groove #440eb8;
+   background-image: url(../imagens/banners/Contatos-e-Suporte-Banner.png);
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+}
+
+@media (min-width:300px) and (max-width:1000px){
+   header{
+      background-image: url(../imagens/banners/Contatos-e-Suporte-banner-mobile.png);
+   }
+}
+
+#contatos-nav {
+   display: inline-flex;
+   justify-content: end;
+   align-items: end;
+   margin-right: 20px;
+   margin-bottom: 10px;
+}
+
+#contatos-nav picture {
+   margin-right: 10px;
+}
+
+#contatos-nav picture img {
+   width: 50px;
+   transition: 0.3s;
+}
+
+#contatos-nav picture img:hover {
+   width: 55px;
+}
+
+main{
+   margin: auto;
+   max-width:1000px;
+   min-width:300px;
+   background-color: whitesmoke;
+   padding-top:30px;
+   box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.448);
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+   margin-bottom: 30px;
+}
+
+main article{
+   display:flex;
+   flex-wrap: wrap;
+   text-align: center;
+   flex-direction: column;
+   justify-content: center;
+}
+
+main article h1{
+   font-size: 1.5em;
+   margin-bottom: 20px;
+   margin-top:20px;
+   color:var(--cor4);
+   font-family: var(--navegacao);
+   font-weight: 400;
+}
+
+main div#infos-loja p{
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: normal;
+}
+
+main div#contatos picture img{
+   width:50px;
+   margin-right:5px;
+   margin-bottom:50px;
+   border-radius: 50%;
+   transition:0.5s;
+}
+
+main div#contatos picture img:hover{
+   width:53px;
+   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.268);
+}
+
+div div#formulario-container{
+   margin: 0 auto;
+   width:450px;
+   margin-bottom: 50px;
+}
+
+div#formulario-container{
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width:450px;
+   background-color: white;
+   border: 1px solid rgba(0, 0, 0, 0.322);
+   border-radius: 10px;
+   box-shadow: 3px 3px 18px rgba(0, 0, 0, 0.378);
+}
+
+div div#formulario-container > input{
+   width:250px;
+   margin-bottom:15px;
+   border-radius: 2px;
+   border:none;
+   outline: none;
+   background-color:rgb(223, 219, 219);
+}
+
+#input-msg{
+   height:50px;
+}
+
+div div#formulario-container > input:hover{
+   outline: none;
+   border: none;
+}
+
+div#formulario-container button{
+   margin-bottom:20px;
+   width:250px;
+   border-radius: 10px;
+   height:40px;
+   border:none;
+   background-color: var(--cor4);
+   color:white;
+   transition: 0.3s;
+}
+
+div#formulario-container button:hover{
+   width:255px;
+   height:45px;
+}
+
+
+#destaque-formulario{
+   display:flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+#destaque-formulario h1{
+   margin-right:15px;
+}
+
+#destaque-formulario img{
+   width:30px;
+}
+
+footer{
+   background: linear-gradient(90deg, var(--cor2), #370c94, #3f11a3);
+   padding:10px;
+   text-align: center;
+   color:white;
+   font-family: Arial, Helvetica, sans-serif;
+} 
+
+footer article{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   gap:30px;
+}
+
+footer article aside#contatos-footer picture img{
+   width:50px;
+   border-radius: 50%;
+   transition: 0.5s;
+}
+
+footer article aside#contatos-footer picture img:hover{
+   width:55px;
+   box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.378);
+}
+
+footer article aside{
+   max-width:350px;
+   min-width:100px;
+}
+
+footer article h2{
+   font-family:var(--linkBotao);
+   font-weight: 600;
+   font-size: 20px;
+   text-align: start;
+}
+
+footer article aside p{
+   text-align: justify;
+   text-indent: 20px;
+   line-height: 1.7em;
+   max-width:400px;
+   min-width:100px;
+}
+
+footer article img{
+   width: 80px;
+}
+
+footer article #logo{
+   width:100px;
+}
+
+#aviso-autoral{
+   margin-top:10px;}

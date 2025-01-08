@@ -1,96 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelShop - Loja Virtual</title>
+
+    <link rel="stylesheet" href="PixelShop-Loja-Virtual/src/css/style.css">
+    <link rel="shortcut icon" href="PixelShop-Loja-Virtual/src/imagens/favicon/favicon-16x16.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+        href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Tektur:wght@400..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <nav id="menu">
+        <picture id="logo">
+            <img src="PixelShop-Loja-Virtual/src/imagens/conteudo/PixelShop-Logo.png" alt="Logo da loja">
+        </picture>
+        <ul>
+            <div id="searchbar">
+                <input type="search" placeholder="Buscar...">
+                <img src="PixelShop-Loja-Virtual/src/imagens/conteudo/lupa-icon.png" alt="Lupa By Royyan Wijaya">
+            </div>
+            <li><a href="#">Home</a></li>
+            <li><a href="PixelShop-Loja-Virtual/suporte.html">Suporte</a></li>
+            <li><a href="#">Ofertas</a></li>
+        </ul>
+    </nav>
+    <header>
+        <nav id="contatos-nav">
+            <picture><img src="PixelShop-Loja-Virtual/src/imagens/conteudo/instagram-icon.png" alt="Ícone do Instagram By Laisa Islam Ani">
+            </picture>
+            <picture><img src="PixelShop-Loja-Virtual/src/imagens/conteudo/whatsapp-icon.png" alt="Ícone do Whatsapp By Enamo Studios">
+            </picture>
+        </nav>
+    </header>
+
+    <main>
+        <aside id="nav-produtos">
+            <div>
+                <div>
+                    <picture><img src="PixelShop-Loja-Virtual/src/imagens/conteudo/Oferta-icon.png" alt="Ofertas By Freepik"></picture>
+                </div>
+                <p>Ofertas</p>
+            </div>
+            <div>
+                <div>
+                    <picture><img src="PixelShop-Loja-Virtual/src/imagens/conteudo/Camisa-icon.png" alt="Conforto By irfansusanto20"></picture>
+                </div>
+                <p>Conforto</p>
+            </div>
+            <div>
+                <div>
+                    <picture><img src="PixelShop-Loja-Virtual/src/imagens/conteudo/Nuvem-icon.png" alt="Tecnologia By meaicon"></picture>
+                </div>
+                <p>Tecnologias</p>
+            </div>
+            <div>
+                <div>
+                    <picture><img src="PixelShop-Loja-Virtual/src/imagens/conteudo/game-icon.png" alt="Jogos By meaicon"></picture>
+                </div>
+                <p>Jogos</p>
+            </div>
+        </aside>
+
+        <article>
+            <h2 id="titulo-maior-destaque">CATEGORIAS</h2>
+            <h2>Ofertas</h2>
+            <div>
+                <a href="PixelShop-Loja-Virtual/produto1.html">
+                    <div>
+                        <picture><img src="PixelShop-Loja-Virtual/src/imagens/produtos/camisa-produto1.png" alt="Produto 1"></picture>
+                        <p>Camiseta com Tecido Respirável e Zonas de Resfriamento.</p>
+                        <p id="preco-anterior">R$240,00</p>
+                        <p id="preco">R$120,00<sup>-50%</sup></p>
+                    </div>
+                </a>
+                <a href="PixelShop-Loja-Virtual/produto2.html">
+                    <div>
+                        <picture><img src="PixelShop-Loja-Virtual/src/imagens/produtos/teclado-produto2.png" alt="Produto 2"></picture>
+                        <p>Teclado Mecânico Personalizável.</p>
+                        <p id="preco-anterior">R$600,00</p>
+                        <p id="preco">R$300,00<sup>-50%</sup></p>
+                    </div>
+                </a>
+            </div>
+            <h2>Conforto</h2>
+            <div>
+                <a href="PixelShop-Loja-Virtual/produto3.html">
+                    <div>
+                        <picture><img src="PixelShop-Loja-Virtual/src/imagens/produtos/cadeiraGamer-produto3.png" alt="Produto 3"></picture>
+                        <p>Cadeira Gamer com Massageador e conforto garantido</p>
+                        <p id="preco">R$700,00<sup>-40% na primeira compra</sup></p>
+                    </div>
+                </a>
+                <a href="PixelShop-Loja-Virtual/produto4.html">
+                    <div>
+                        <picture><img src="PixelShop-Loja-Virtual/src/imagens/produtos/camiseta-produto4.png" alt="Produto 4"></picture>
+                        <p>Camiseta com Bolsos Inteligentes.</p>
+                        <p id="preco">R$120,00<sup>-40% na primeira compra</sup></p>
+                    </div>
+                </a>
+            </div>
+            <h2>Tecnologias</h2>
+            <div>
+                <a href="PixelShop-Loja-Virtual/produto5.html">
+                    <div>
+                        <picture><img src="PixelShop-Loja-Virtual/src/imagens/produtos/Mouse-produto5.png" alt="Produto 5"></picture>
+                        <p>Mouse gamer com led</p>
+                        <p id="preco">R$175,00<sup>-40% na primeira compra</sup></p>
+                    </div>
+                </a>
+                <a href="PixelShop-Loja-Virtual/produto6.html">
+                    <div>
+                        <picture><img src="PixelShop-Loja-Virtual/src/imagens/produtos/headseat-azul-produto6.png" alt="Produto 6"></picture>
+                        <p>Headseat azul com som 8D</p>
+                        <p id="preco">R$230,00<sup>-40% na primeira compra</sup></p>
+                    </div>
+                </a>
+
+                <a href="PixelShop-Loja-Virtual/produto7.html">
+                    <div>
+                        <picture><img src="PixelShop-Loja-Virtual/src/imagens/produtos/headsetPreto-produto7.png" alt="Produto 7"></picture>
+                        <p>Headseat preto com supressão de ruído</p>
+                        <p id="preco">R$230,00<sup>-40% na primeira compra</sup></p>
+                    </div>
+                </a>
+            </div>
+            <h2>Jogos</h2>
+            <div>
+                <a href="PixelShop-Loja-Virtual/produto8.html">
+                    <div>
+                        <picture><img src="PixelShop-Loja-Virtual/src/imagens/produtos/playstation5-produto8.png" alt="Produto 8"></picture>
+                        <p>Playstation 5</p>
+                        <p id="preco">R$4500,00<sup>-40% na primeira compra</sup></p>
+                    </div>
+                </a>
+                <a href="PixelShop-Loja-Virtual/produto9.html">
+                    <div>
+                        <picture><img src="PixelShop-Loja-Virtual/src/imagens/produtos/controle-xbox-one-produto9.png" alt="Produto 9">
+                        </picture>
+                        <p>Controle de Xbox One</p>
+                        <p id="preco">R$300,00<sup>-40% na primeira compra</sup></p>
+                    </div>
+                </a>
+
+                <a href="PixelShop-Loja-Virtual/produto10.html">
+                    <div>
+                        <picture><img src="PixelShop-Loja-Virtual/src/imagens/produtos/xbox-one-produto10.png" alt="Produto 10"></picture>
+                        <p>Xbox One</p>
+                        <p id="preco">R$1500,00<sup>-40% na primeira compra</sup></p>
+                    </div>
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <article>
+            <aside id="contatos-footer">
+                <picture><img src="PixelShop-Loja-Virtual/src/imagens/conteudo/instagram-icon.png" alt="Ícone do Instagram"></picture>
+                <picture><img src="PixelShop-Loja-Virtual/src/imagens/conteudo/whatsapp-icon.png" alt="Ícone do Whatsapp"></picture>
+            </aside>
+            <aside>
+                <picture>
+                    <img id="logo" src="PixelShop-Loja-Virtual/src/imagens/conteudo/PixelShop-Logo.png" alt="Lojo da loja">
+                </picture>
+                <h2>PixelShop,Um mundo de possibilidades em cada pixel.</h2>
+            </aside>
+            <aside>
+                <picture><img src="PixelShop-Loja-Virtual/src/imagens/conteudo/cps-logo.png" alt="Lojo do Centro Paulo Souza"></picture>
+                <p>Projeto educacional feito por <strong>Vinicíus Martins </strong>como ferramenta de avaliação na <strong>ETEC de Cidade Tiradentes</strong></p>
+            </aside>
+        </article>
+        <p id="aviso-autoral">&copy;Direitos autorais reservados - 2025</p>
+    </footer>
+</body>
+
 </html>

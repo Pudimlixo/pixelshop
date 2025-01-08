@@ -1,0 +1,89 @@
+*Documentação - Pág 1 - PixelShop
+
+Página - Home
+
+[navbar]
+
+[header]
+
+<h1>PixelShop</h1>
+
+<h2>PixelShop,Um mundo de possibilidades em cada pixel.</h2>
+
+[navbar]
+
+img*2
+
+<p>+123-456-7890</p>
+
+[main]
+
+[div]
+
+<p><strong>Ofertas</strong></p>
+
+<p><strong>Conforto</strong></p>
+
+<p><strong>Tecnologias</strong></p>
+
+<p><strong>Jogos</strong></p>
+
+[article]
+
+<h1>Produtos da loja</h1>
+
+div*4
+
+<h2>Ofertas</h2>
+
+Camiseta com Tecido Respirável e Zonas de Resfriamento
+R$120,00
+
+Teclado Mecânico Personalizável
+R$300,00
+
+Cadeira Gamer com Massageador e conforto garantido
+R$700,00
+
+<h2>Conforto</h2>
+
+Camiseta com Bolsos Inteligentes
+R$120,00
+
+Calça com Proteção Ergonômica
+R$120,00
+
+Camiseta branca
+R$120,00
+
+<h2>Tecnologia</h2>
+
+Mouse gamer com led
+R$175,00
+
+Headseat azul com som 8D
+R$230,00
+
+Headseat preto com supressão de ruído
+R$230,00
+
+<h2>Jogos</h2>
+
+Playstation 5
+R$4500,00
+
+Controle de Xbox one
+R$300,00
+
+Xbox One
+R$1500,00
+
+[footer]
+
+img*2
+
+<h2>PixelShop,Um mundo de possibilidades em cada pixel.</h2>
+
+<p>Projeto estudantil de Vinícius Martins, trabalho feito como avaliação no curso de Informática para a web na <strong>ETEC da Cidade Tiradentes</strong></p>
+
+<img>
